@@ -6,12 +6,12 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 8080"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "fetchier": "0.0.17",
-    "next-fucss": "0.0.19",
+    "next-fucss": "0.0.20",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.10",
