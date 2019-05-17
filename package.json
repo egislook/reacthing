@@ -11,7 +11,7 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "fetchier": "0.0.17",
-    "next-fucss": "0.0.21",
+    "next-fucss": "0.0.22",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.10",
