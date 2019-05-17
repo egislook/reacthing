@@ -1,0 +1,31 @@
+/** Fucss globals */ 
+html, body{min-height: 100%; height: 100%;}
+body{margin: 0; text-align: center; border-width: 0;              font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;letter-spacing: 0.02em;              -webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;}
+*{outline: 0; padding: 0; box-sizing: border-box; margin: 0; border-style: solid; outline-style: solid; border-width: 0; vertical-align: baseline;}
+*:not([class*="jc\:"]) > *{margin: 0 auto;}
+a{text-decoration: none; color: inherit;}
+a, span, img, button, i, label{display: inline-block; vertical-align: middle;}
+button, a, i, label, img{cursor: pointer; font-style: normal;}
+input, button, select, option, textarea{font-size: 100%; font-family: inherit;}
+::selection{background: #DE3E3E; color: #fff;}
+[contenteditable]{cursor: text}
+[contenteditable]:empty:before{content: attr(placeholder); opacity: 0.5; display: block;}
+/** Fucss class rules */ 
+.p\:10px{padding:10px;}
+.fs\:250pc{font-size:250%;}
+.p\:15px-30px{padding:15px 30px;}
+.br\:5px{border-radius:5px;}
+.bs\:1{box-shadow:0px 1px 2px rgba(0,0,0,0.10);}
+.bd\:0{border:0;}
+.bg\:prim{background:#DE3E3E;}
+.c\:white{color:#fff;}
+.m-t\:20px{margin-top:20px;}
+@keyframes spin{to { transform: rotate(360deg); }}
+@keyframes fadeIn{from { opacity: 0.2; } to { opacity: 1; }}
+@keyframes fadeOut{from { opacity: 1; } to { opacity: 0.5; }}
+@keyframes scaler{0% { transform:scale(0);opacity:1 } to { transform:scale(1);opacity:0 }}
+@keyframes hide{to { position: absolute; visibility: hidden; }}
+@keyframes land{0% { opacity: 0.3; transform: translateY(-3rem); } to { opacity: 1; transform: translateY(0); }}
+@keyframes dash{to { stroke-dashoffset: 0; }}
+@keyframes marquee{0% { transform: translateX(0); } 100% { transform: translateX(-50%); }}
+@keyframes bounce{0% { transform: scale(1,1) translateY(0); } 10% { transform: scale(1.1,.9) translateY(0); } 30% { transform: scale(.9,1.1) translateY(-100px); } 50% { transform: scale(1.05,.95) translateY(0); } 57% { transform: scale(1,1) translateY(-7px); } 64% { transform: scale(1,1) translateY(0); } 100% { transform: scale(1,1) translateY(0); }}

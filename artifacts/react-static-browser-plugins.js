@@ -13,7 +13,7 @@ const plugins = [{
         hooks: plugin0({})
       },
 {
-        location: "../node_modules/react-static-plugin-sitemap/dist",
+        location: "../node_modules/next-fucss",
         plugins: [],
         hooks: {}
       },

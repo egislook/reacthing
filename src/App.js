@@ -5,11 +5,13 @@ import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 
 import './app.css'
+import './style.css'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
 
-function App() {
+export default () => {
+    
   return (
     <Root>
       <nav>
@@ -29,5 +31,3 @@ function App() {
     </Root>
   )
 }
-
-export default App
