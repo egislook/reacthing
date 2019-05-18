@@ -22,24 +22,15 @@ export default {
     ]
   },
   plugins: [
-    [
-      require.resolve('react-static-plugin-source-filesystem'),
-      {
-        location: path.resolve('./src/pages'),
-      },
-    ],
+    require.resolve('react-static-plugin-styled-components'),
+    [ require.resolve('react-static-plugin-source-filesystem'), { location: path.resolve('./src/pages') } ],
     require.resolve('react-static-plugin-reach-router'),
-    [
-      require.resolve('next-fucss'),
-      {
-        styleFile: '/src/style.css'
-      }
-    ]
+    [ require.resolve('next-fucss'), { styleFile: '/src/style.css' } ]
   ],
   devServer: {
     port: '8080',
     host: '0.0.0.0',
-    socket: 'socket',
     disableHostCheck: true,
+    hot: false
   }
 }

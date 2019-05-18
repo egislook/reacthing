@@ -9,9 +9,10 @@ export default App
 
 // Render your app
 if (typeof document !== 'undefined') {
+  
   const target = document.getElementById('root')
 
-  const renderMethod = target.hasChildNodes()
+  const renderMethod = target.hasChildNodes() && !module.hot
     ? ReactDOM.hydrate
     : ReactDOM.render
 
@@ -21,18 +22,4 @@ if (typeof document !== 'undefined') {
 
   // Render!
   render(App)
-
-  // Hot Module Replacement
-  // if (module && module.hot) {
-  //   module.hot.accept('./App', () => {
-  //     console.log('render');
-  //     if(typeof window === 'object'){
-  //       const link = '/main.css';
-  //       const elem = document.querySelector('[href="' + link + '"]');
-  //       const href = elem.href.split('?').shift();
-  //       elem.href = href + '?' + new Date().getTime();
-  //     }
-  //     render(App)
-  //   })
-  // }
 }
