@@ -1,6 +1,6 @@
 {
-  "name": "react-static-example-basic",
-  "private": true,
+  "name": "Reacthing",
+  "version": "0.0.0",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
@@ -11,15 +11,14 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "fetchier": "0.0.17",
-    "next-fucss": "file:../next-fucss",
+    "next-fucss": "^0.1.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-static": "^7.0.10",
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-source-filesystem": "^7.0.0",
     "react-static-plugin-styled-components": "^7.0.10",
-    "styled-components": "^4.2.0",
-    "workbox-webpack-plugin": "^4.3.1"
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
